@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #9FA6BC;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #282a36;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 250px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            background-color: #44475a;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .bg-primary { background-color: #6272a4 !important; }
+        .bg-success { background-color: #50fa7b !important; color: black !important; }
+        .bg-warning { background-color: #ffb86c !important; color: black !important; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="text-center">Admin</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="gesemployes.php">Gestion des Employés</a>
+        <a href="gesclients.php">Gestion des Clients</a>
+        <a href="http://localhost:5000/" target="_blank">Accéder au service FTP</a>
+        <a href="ssh_client.html">Accès Distant</a>
+        <a href="deconnexion.html">Déconnexion</a>
+    </div>
+    <div class="main-content">
+        <h1 class="mb-4">Tableau de bord</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Employés</h5>
+                        <p class="card-text">Nombre total : 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Clients</h5>
+                        <p class="card-text">Nombre total : 120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Documents</h5>
+                        <p class="card-text">Total : 300 fichiers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
